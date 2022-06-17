@@ -4,11 +4,12 @@ import { useEffect, useState } from "react";
 import Button from "../ui/Button";
 import StyledCol from "./Hero.styled";
 import axios from "axios";
+import ENDPOINT from "../../utils/constants/endpoints";
 
 function Hero() {
   // Membuat State movie
   const [movie, setMovie] = useState("");
-  const API_KEY = process.env.REACT_APP_API_KEY;
+  // const API_KEY = process.env.REACT_APP_API_KEY;
   const genres = movie && movie.genres.map((genre) => genre.name).join(",  ");
   // console.log(genres);
   const trailer = movie && `https://www.youtube.com/watch?v=${movie.videos.results[0].key}`;
@@ -39,8 +40,8 @@ function Hero() {
 
   //mendapatkan 1 data dari trending movies
   async function getTrendingMovies(){
-    const URL = `https://api.themoviedb.org/3/trending/movie/day?api_key=${API_KEY}`;
-    const response = await axios(URL);
+    // const URL = `https://api.themoviedb.org/3/trending/movie/day?api_key=${API_KEY}`;
+    const response = await axios(ENDPOINT.TRENDING);
     // console.log(response.data.results[0]);
 
     //ubah array untuk melihat hasil di pakcage hero + bisa generate angka 0 - 20 (Math.floor(Math.random * 20)
@@ -59,8 +60,8 @@ function Hero() {
     const id = trendingMovie.id;
 
     //fetch detail movie by id
-    const URL = `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&append_to_response=videos`;
-    const response = await axios(URL);
+    // const URL = `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&append_to_response=videos`;
+    const response = await axios(ENDPOINT.DETAIL(id));
     console.log(response.data);
 
 
