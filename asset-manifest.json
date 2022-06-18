@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/movie-database/static/css/main.4850aed1.css",
-    "main.js": "/movie-database/static/js/main.bb3bde9f.js",
-    "static/js/787.d02d9e27.chunk.js": "/movie-database/static/js/787.d02d9e27.chunk.js",
-    "index.html": "/movie-database/index.html",
-    "main.4850aed1.css.map": "/movie-database/static/css/main.4850aed1.css.map",
-    "main.bb3bde9f.js.map": "/movie-database/static/js/main.bb3bde9f.js.map",
-    "787.d02d9e27.chunk.js.map": "/movie-database/static/js/787.d02d9e27.chunk.js.map"
+    "main.css": "/movie-database-fianfi/static/css/main.4850aed1.css",
+    "main.js": "/movie-database-fianfi/static/js/main.c6b44dbc.js",
+    "static/js/787.d02d9e27.chunk.js": "/movie-database-fianfi/static/js/787.d02d9e27.chunk.js",
+    "index.html": "/movie-database-fianfi/index.html",
+    "main.4850aed1.css.map": "/movie-database-fianfi/static/css/main.4850aed1.css.map",
+    "main.c6b44dbc.js.map": "/movie-database-fianfi/static/js/main.c6b44dbc.js.map",
+    "787.d02d9e27.chunk.js.map": "/movie-database-fianfi/static/js/787.d02d9e27.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4850aed1.css",
-    "static/js/main.bb3bde9f.js"
+    "static/js/main.c6b44dbc.js"
   ]
 }
