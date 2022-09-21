@@ -25,12 +25,7 @@ function Hero() {
   //   setMovie(data);
   // }
 
-  /**s
-   * Menjalankan useEffect.
-   * Parameter kedua digunakan untuk custom lifecycle update.
-   * Jika state di dalam array berubah, maka jalankan useEffect lagi (lifecycle update).
-   * Jika state di dalam array kosong, maka jalankan sekali (lifecycle mount).
-   */
+  
   // useEffect(fetchMovie, []);
 
   // Tampilkan state movie.

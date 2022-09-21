@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 // Import Browser Router dari React Router
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 //gh-pages ubah BrowserRouter menjadi HashRouter
 import { Provider } from "react-redux";
 import store from "./store";
@@ -20,9 +20,9 @@ ReactDOM.render(
     
     
      <Provider store={store}>
-     <BrowserRouter>
+     <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
      </Provider>
     
   </React.StrictMode>,
